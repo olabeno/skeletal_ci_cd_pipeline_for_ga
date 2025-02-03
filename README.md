@@ -1,0 +1,1 @@
+# skeletal_ci_cd_pipeline_for_ga
