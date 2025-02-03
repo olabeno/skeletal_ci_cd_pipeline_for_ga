@@ -56,7 +56,7 @@ jobs:
           IMAGE_NAME: myapp
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          sed -i "s|IMAGE_PLACEHOLDER|${{ secrets.DOCKER_USERNAME }}/$IMAGE_NAME:$IMAGE_TAG|g" k8s/deployment.yaml
+          sed -i "s|IMAGE_PLACEHOLDER|${{ secrets.DOCKER_USERNAME }}/$IMAGE_NAME:$IMAGE_TAG|g" k8s/app_deployment.yaml
 
       - name: Apply Kubernetes Configuration
         run: |
